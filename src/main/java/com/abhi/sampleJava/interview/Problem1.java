@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 public class Problem1 {
 
     public static void main(String args[]){
-
+      //Kay mhanta rao ?
         new Problem1().solve();
     }
 
