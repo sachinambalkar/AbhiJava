@@ -8,6 +8,9 @@ public class Problem1 {
     public static void main(String args[]){
       //Kay mhanta rao ?
         new Problem1().solve();
+        Problem1 p1= new Problem1();
+
+       // p1.solve();
     }
 
 
@@ -25,18 +28,22 @@ public class Problem1 {
                 "still in their infancy";
 
       String[] splittedStr=strs.split("\\ ");
-
+StringBuffer sb= new StringBuffer();
     // Itr1 =>
    // System.out.println(Arrays.stream(splittedStr).collect(Collectors.joining(" \n ")) ); ;
-
+StringBuilder s1 = new StringBuilder();
+       // String s1= new String();
         for(int index=0;index<splittedStr.length;index++){
 
-            if(splittedStr[index]=="is"){
+            if(!splittedStr[index].equals("is")){
+             //   s1=s1+" " +splittedStr[index];
+               s1.append(" ");
+               s1.append(splittedStr[index]);
 
             }
-            System.out.println(splittedStr[index]);
-        }
 
+        }
+        System.out.println("abhi "+s1.toString());
     }
 
     public void method1(){

@@ -68,5 +68,10 @@ public class CompareEquals {
         boolean res=(abhi1.equals(abhi2));
         System.out.println("values for abhi1 and abhi2 are same ? " + res);
 */
+        String name1=new String ("Sumit");
+        String name3=name1;
+        String name2="Abhi";
+        boolean res=name1.equals(name2);
+        System.out.println(name1.equals(name2));
     }
 }
